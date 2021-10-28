@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="test suite" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="listeners.TestngListeners"></listener>
+    </listeners>
+    <test name="test">
+        <parameter name="browserName" value="chrome"/>
+        <classes>
+            <class name="testngdemos.TestngRetryDemo"/>
+        </classes>
+    </test>
+</suite>

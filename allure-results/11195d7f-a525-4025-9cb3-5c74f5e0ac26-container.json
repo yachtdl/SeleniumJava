@@ -1,0 +1,1 @@
+{"uuid":"11195d7f-a525-4025-9cb3-5c74f5e0ac26","name":"SeleniumJava","children":["70004943-6bd0-48ab-a5a4-d016d6d12b05"],"befores":[],"afters":[{"name":"teardown","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1635388256895,"stop":1635388257015}],"links":[],"start":1635388212576,"stop":1635388257018}

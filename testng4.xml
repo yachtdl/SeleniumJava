@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="test suite" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="listeners.TestngListeners"></listener>
+    </listeners>
+    <test name="test on firefox">
+        <parameter name="browserName" value="firefox"/>
+        <groups>
+            <!--create MetaGroups-->
+            <!--<define name="regression1">
+                <include name="regession"/>
+            </define>-->
+            <run>
+                <include name="smoke"/>
+                <exclude name="sanity"/>
+                <!--<include name="regression1"/>-->
+            </run>
+        </groups>
+        <classes>
+            <class name="testngdemos.testngdemos.TestngGroupDemo"/>
+        </classes>
+    </test>
+</suite>
